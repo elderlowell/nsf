@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt build && rm -rf ../functions/.nuxt && mkdir -p ../functions/.nuxt/dist && cp -r .nuxt/dist/ ../functions/.nuxt/dist && cp ./nuxt.config.js ../functions && rm -rf ../public/* && mkdir -p ../public/nuxt && cp -r .nuxt/dist/client/ ../public/nuxt && cp -a static/. ../public/",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",

@@ -1,10 +1,10 @@
 const functions = require('firebase-functions')
-const { Nuxt } = require('nuxt')
+const { Nuxt } = require('nuxt-start')
 
-// const nuxtConfig = require('./nuxt.config.js')
+const nuxtConfig = require('./nuxt.config.js')
 
 const config = {
-  // ...nuxtConfig,
+  ...nuxtConfig,
   dev: false,
   debug: false,
   buildDir: '.nuxt',
